@@ -453,6 +453,369 @@ footer{
 
 
 
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+/* LOGIN */
+.login-modal{
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.6);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.login-box{
+    background: white;
+    width: 350px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.login-box h2{
+    margin-bottom: 20px;
+}
+
+.login-box input{
+    width: 100%;
+    height: 45px;
+
+    margin-bottom: 15px;
+
+    padding: 0 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-box button{
+    width: 100%;
+    height: 45px;
+
+    border: none;
+
+    background: #22b455;
+    color: white;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.login-box button:hover{
+    background: black;
+}
+
+#loginMessage{
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+
+/* LOGIN MODAL */
+.login-modal{
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.6);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.login-box{
+    width: 350px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.login-box h2{
+    margin-bottom: 20px;
+}
+
+.login-box input{
+    width: 100%;
+    height: 45px;
+
+    margin-bottom: 15px;
+
+    padding: 0 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-box button{
+    width: 100%;
+    height: 45px;
+
+    border: none;
+
+    background: #22b455;
+    color: white;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.login-box button:hover{
+    background: black;
+}
+
+#loginMessage{
+    margin-top: 10px;
+    color: red;
+}
+
+
+/* BLOG + ABOUT MODAL */
+.info-modal{
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.6);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.info-box{
+    width: 400px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.close-btn{
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+/* PRODUCT MODAL */
+.product-modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.product-box{
+    width: 900px;
+    max-width: 95%;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.close-product{
+    position: absolute;
+
+    top: 10px;
+    right: 20px;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+.product-card{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card:hover{
+    transform: translateY(-5px);
+}
+
+
+
+/* CART */
+
+.cart-modal{
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.7);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 99999;
+}
+
+.cart-box{
+    width: 500px;
+
+    max-width: 95%;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    position: relative;
+
+    max-height: 80vh;
+
+    overflow-y: auto;
+}
+
+.close-cart{
+    position: absolute;
+
+    top: 10px;
+    right: 20px;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+.cart-item{
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+    border-bottom: 1px solid #ddd;
+
+    padding-bottom: 15px;
+}
+
+.cart-item img{
+    width: 80px;
+
+    height: 80px;
+
+    object-fit: cover;
+}
+
+
+
+
+/* ORDER */
+
+.order-modal{
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.7);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999999;
+}
+
+.order-box{
+    width: 450px;
+
+    max-width: 95%;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.close-order{
+    position: absolute;
+
+    top: 10px;
+    right: 20px;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+.order-box input,
+.order-box textarea{
+    width: 100%;
+
+    margin-top: 15px;
+
+    border: 1px solid #ccc;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    outline: none;
+}
+
+.order-box textarea{
+    height: 120px;
+
+    resize: none;
+}
+
 
 
 
